@@ -3,4 +3,5 @@ p {
 	background: pink;
 	font-weight: bold;
 	text-align: right;
+	text-shadow: 2px 2px #ff0000;
 }
