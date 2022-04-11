@@ -11,3 +11,8 @@ border: yellow dotted 2px;
 ol {
 list-style-type: none;
 }
+
+ul:hover {
+color: green;
+}
+
