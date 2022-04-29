@@ -19,7 +19,7 @@ h1 {
 /* SELECT ALL SQUARES IN THE ARRAY*/
 
 .container .squares:nth-child(-n+4) {
-    background-image: url("/Project/images/cat1.jpg");
+    background-image: url("/Project/images/cat1.png");
     color: #fff;
     float: left;
     width: 100px;
@@ -43,7 +43,7 @@ h1 {
 
 /* SELECT INDIVIDUAL SQUARE */
 .squares:nth-child(1) {
-    background: #4240ff;
+    background-color: #4240ff;
 }
 .squares:nth-child(2) {
     background: #ab3fdd;
@@ -57,7 +57,7 @@ h1 {
 
 /* HOVER EFFECTS */
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("/Project/images/dog.jpg");
+    background-image: url("/Project/images/dog.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -82,7 +82,7 @@ h1 {
 @keyframes race {
     0%, 100%{
     transform: translateY(0px);
-    background-image: url("/Project/images/dog.jpg");
+    background-image: url("/Project/images/dog.png");
     }
     50% {
         transform:translateY(330px);
