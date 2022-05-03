@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Famous Cats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/one_page_website.css">
 </head>
 <body>
 
     <!--NAV-->
-    <div>
-        <div>
-            <ul>
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
                 <a href="#home"><li>HOME</li></a>
                 <a href="#cats"><li>CATS</li></a>
                 <a href="#contact"><li>CONTACT</li></a>
@@ -20,14 +24,16 @@
 
     <!--HOME-->
     <div>
-        <div>
+        <div class="main-header">
             <h1>Hiss-torically Fa-meow-s Cats</h1>
             <p>This site is dedicated to honoring cats who made an impact</p>
-        </div>
-        <img src="./images/home.jpg" width="1150" height="550">
+            <img src="./images/home.jpg" height="1200" width="1000">
+        
+        
         <quoteblock>
             <p><strong>“I have studied many philosophers and many cats. The wisdom of cats is infinitely superior.”</strong><br>-William Shakespeare</p>
         </quoteblock>
+        </div>
     </div>
     <!--END HOME-->
 <br>
@@ -38,7 +44,7 @@
             <div>
 
                 <!--CAT 1-->
-                <div>
+                <div class="cat-titles">
                     <h3>Felicette the Astrocat</h3>
                     <img src="./images/cat1.jpg" alt="Felicette the space cat">
                     <quoteblock cite="http://www.collectspace.com/news/news-111717a-felicette-first-cat-space-statue.html">
@@ -46,27 +52,27 @@
                         </p>
                     </quoteblock>
                 </div>
-                <!--END CAT 1-->
+                <!--END CAT 1--> <br><br><br>
 
                 <!--CAT 2-->
-                <div>
+                <div class="cat-titles">
                     <h3>Unsinkable Sam</h3>
                     <img src="./images/cat2.jpg" alt="Unsinkable Sam">
                     <quoteblock cite="https://www.grunge.com/437756/the-most-famous-cats-in-history/">
                         <p>In the spring of 1941, the Bismarck, a German battleship, set sail towards the North Atlantic, tasked with the duty to "attack the vast naval convoys" that carried important supplies from North America to Great Britain. As the story goes, after viciously fighting for three days, the Bismarck was finally defeated, with only a few crewmembers surviving — including one lucky cat.<br><br>The Bismarck's black and white kitty, Oscar, was brought on board the opposing ship, the HMS Cossack, and renamed Unsinkable Sam. His new name was appropriate for him, as a mere five months into sailing with the Cossack, the ship was sunk by a German submarine, with Sam miraculously surviving yet again. He was then taken aboard the HMS Ark Royal, where Sam truly tested how many of his lives he had left and got away from yet another torpedoing, finally slinking onto the HMS Legion. It seems that authorities finally took pity on poor Sam and brought him to shore so he could retire from his naval career.</p>
                     </quoteblock>
                 </div>
-                <!--END CAT 2-->
+                <!--END CAT 2--> <br><br><br>
 
                 <!--CAT 3-->
-                <div>
+                <div class="cat-titles">
                     <h3>Little Nicky, the Cloned Cat</h3>
                     <img src="./images/cat3.jpg" alt="Little Nicky">
                     <quoteblock cite ="https://www.grunge.com/437756/the-most-famous-cats-in-history/">
                         <p>As revealed by the BBC, in 2004, a Texan woman by the name of Julie paid an astonishing $50,000 to clone her 17-year-old cat, Nicky, who had died the previous year. Giving her furry companion's DNA to California-based company Genetic Savings and Clone, Julie claimed that the clone, Little Nicky, a Maine coon kitten, looked identical to her dead cat. "I have not been able to see one difference," she claimed to the Los Angeles Times. What's more, the kitten seemed to share similar personality traits. "Little Nicky loves water, like Nicky did, and he's already jumped into the bathtub like Nicky used to do."<br><br> According to the Los Angeles Times, Little Nicky is the fourth feline that the biotech company has successfully cloned. The innovation has sparked criticism amongst animal rights activists, with Michael Mountain, president of Best Friends Animal Society, declaring to the outlet, "You're dealing with a Dr. Frankenstein situation."</p>
                     </quoteblock>
                 </div>
-                <!--END CAT 3-->
+                <!--END CAT 3--> <br><br><br>
 
             </div>
         </div>
@@ -80,7 +86,7 @@
                 <h2>Not seeing your favorite cat?</h2>
                 <h4>Submit them below for a chance to have them showcased!</h4>          
             </div>
-            <div>
+            <div class="catcontact">
                 <form action="" method="post">
                     <input type="text" placeholder="First Name">
                     <input type="text" placeholder="Last Name">
@@ -90,7 +96,7 @@
                         <!-- <label class="terms">Terms and Conditions</label> -->
                     </div>
                     <br>
-                    <div>
+                    <div class="submit">
                         <input type="submit" value="Submit">
                     </div>
                     <br>
@@ -103,7 +109,7 @@
     <section>
         <div>
             <h4>Enjoy this vintage commercial from one the companies feeding these fantastic felines:</h4>
-            <iframe src="https://www.youtube.com/watch?v=nxHWpffLRLo" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hS5QzGIVa7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     <!--END VIDEO-->
