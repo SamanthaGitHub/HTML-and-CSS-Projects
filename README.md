@@ -9,5 +9,5 @@ A site for eggcellent egg recipes (recipes to be added). There are nine egg dish
 (2) One Page Website
 A website about historically famous felines, including Felicette the 'astrocat' who was the first cat to go into space, Unsinkable Sam who survived several sinking ships, and Little Nicky who was the first cat ever cloned.
 
-(3) bootstrap4 project
+(3) Bootstrap4 Project
 My bootstrap projects features a site dedicated to guiding mushroom hunters as to where to find morels, chanterelles, lion's mane and truffle mushrooms. There is also information about what time of year to go looking for each mushroom species.
