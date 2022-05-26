@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/one_page_website.css">
+<link rel="stylesheet" href="CSS/one_page_website.css">
+<script src="JS/one_page_website.js"></script>
 </head>
 <body>
 
@@ -37,14 +38,75 @@
     </div>
     <!--END HOME-->
 <br>
-    <!--CATS-->
-    <section>
-        <div id="cats">
-            <h2>The Cats that Made History</h2>
-            <div>
+   
+    <h2>The Cats that Made History</h2>
+    <!-- MODAL START -->
+    <!-- imgs to open lightbox -->
+    <div class="catRow">
+        <div class="catColumn">
+            <img src="images/cat1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Felicette The Astro Cat">
+        </div>
+        <div class="catColumn">
+            <img src="images/cat2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Unsinkable Sam">
+        </div>
+        <div class="catColumn">
+            <img src="images/cat3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Little Nicky">
+        </div>
+    </div>
+    
+    <!-- the modal/lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modalContent">
+            <!-- was mySlides -->
+            <div class="myCatSlides">
+                <!-- was numbertext -->
+                <div class="numberText">1 / 3</div>
+                <img src="images/cat1.jpg" alt="The Astro Cat" style="width:100%">
+            </div>
 
+            <div class="myCatSlides">
+                <div class="numberText">2 / 3</div>
+                <img src="images/cat2.jpg" alt="Unsinkable Same" style="width:100%">
+            </div>
+
+            <div class="myCatSlides">
+                <div class="numberText">3 / 3</div>
+                <img src="images/cat3.jpg" alt="Little Nicky" style="width:100%">
+            </div>
+
+            <!-- prev/next controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- caption text -->
+            <!-- was caption-container -->
+            <div class="captionContainer">
+                <p id="caption"></p>
+            </div>
+
+            <!-- thumbnail image controls -->
+            <div class="catColumn">
+                <!-- catThumb was demo -->
+                <img class="catThumb" src="images/cat1.jpg" onclick="currentSlide(1)" alt="The Astro Cat">
+            </div>
+            <div class="catColumn">
+                <img class="catThumb" src="images/cat2.jpg" onclick="currentSlide(2)" alt="Unsinkable Sam">
+            </div>
+            <div class="catColumn">
+                <img class="catThumb" src="images/cat3.jpg" onclick="currentSlide(3)" alt="Little Nicky">
+            </div>
+        </div>
+    </div>
+
+            <!-- MODAL END -->
+
+    <section>
+        <div>
+             <!--CATS START-->
+            <div class="myCatsContainer">
                 <!--CAT 1-->
-                <div class="cat-titles">
+                <div class="myCats">
                     <h3>Felicette the Astrocat</h3>
                     <img src="./images/cat1.jpg" alt="Felicette the space cat">
                     <quoteblock cite="http://www.collectspace.com/news/news-111717a-felicette-first-cat-space-statue.html">
@@ -55,7 +117,7 @@
                 <!--END CAT 1--> <br><br><br>
 
                 <!--CAT 2-->
-                <div class="cat-titles">
+                <div class="myCats">
                     <h3>Unsinkable Sam</h3>
                     <img src="./images/cat2.jpg" alt="Unsinkable Sam">
                     <quoteblock cite="https://www.grunge.com/437756/the-most-famous-cats-in-history/">
@@ -65,7 +127,7 @@
                 <!--END CAT 2--> <br><br><br>
 
                 <!--CAT 3-->
-                <div class="cat-titles">
+                <div class="myCats">
                     <h3>Little Nicky, the Cloned Cat</h3>
                     <img src="./images/cat3.jpg" alt="Little Nicky">
                     <quoteblock cite ="https://www.grunge.com/437756/the-most-famous-cats-in-history/">
@@ -73,11 +135,10 @@
                     </quoteblock>
                 </div>
                 <!--END CAT 3--> <br><br><br>
-
             </div>
         </div>
     </section>
-    <!--END CATS-->
+    <!--CATS END-->
 
     <!--CONTACT FORM-->
     <section>
