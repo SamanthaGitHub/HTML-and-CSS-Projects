@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
+
 function openModal() {
     document.getElementById("myModal").style.display = "block";
 }

@@ -1,8 +1,19 @@
+html {
+    background-color: black;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     background-color: rgb(0, 0, 0);
     color:azure;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 .catcontact input[type="text"] {
