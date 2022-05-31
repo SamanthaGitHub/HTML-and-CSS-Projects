@@ -158,23 +158,24 @@ section {
     font-variant: small-caps;
     color: #fff;
     letter-spacing: 5pt;
-    word-spacing: 21pt;
-    font-size: 5.5em;
-    text-align: left;
+    /* word-spacing: 21pt; */
+    font-size: 50px;
+    /* width: 7vw; */
+    text-align: center;
     font-family:'Courier New', Courier, monospace;
     line-height: 2;
     font-weight: 900;
     border: 5px double #fff;
     padding: 20px;
-    margin: 300px;
+    margin: 30px;
 }
 
-.head-sub-main {
+/* .head-sub-main {
     font-size: 23px;
     font-weight: 500;
     padding: 50px 20px 10px 20px;
     text-transform: uppercase;
-}
+} */
 
 .head-last {
     font-size: 18px;
@@ -277,7 +278,8 @@ section {
     margin: 30px 1px 0 0;
     padding-left: 52px;
     font-size: 14px;
-    line-height: 5px;
+    line-height: 10px;
+    
     color: #000;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
@@ -301,9 +303,10 @@ section {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 0px 3%;
-    padding: 7px 0px;
+    padding: 7px 2px;
     width: 25%;
-    font-size: 18px;
+    height: 35px;
+    font-size: auto;
     transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius: 7px;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);

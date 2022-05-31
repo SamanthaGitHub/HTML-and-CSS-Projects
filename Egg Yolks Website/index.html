@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <script src="js/EggYolk.js"></script>
 </head>
 <body>
     
@@ -159,14 +160,15 @@
                 <h1 class="heading-padding">Submit a Recipe</h1>
                 <div class="recipe">
                     <h2><span>Do you have eggciting recipes others might want to crack into?</span>
-                    <br><br>Whisk up a submission form below to be featured on the site!
+                    <br><br>Whisk up a submission form below to possibly be featured on the site!
                     </h2>
                     <div class="form-recipe">
-                        <form action="" method="post">
-                            <input type="text" class="rsvp" value="" placeholder="First Name">
-                            <input type="text" class="rsvp" value="" placeholder="Last Name">
-                            <input type="text" class="rsvp" value="" placeholder="Email Address">
-                            <input type="text" class="rsvp" value="" placeholder="Recipe">
+                        <form name="submitForm" onsubmit="return formValidate()" action="" method="">
+                            <input type="text" class="firstn" value="" placeholder="First Name">
+                            <input type="text" class="lastn" value="" placeholder="Last Name">
+                            <input type="text" class="pnum" value="" name="pnum" placeholder="Phone Number">
+                            <input type="text" class="email" value="" name="email" placeholder="Email Address">
+                            <input type="text" class="rcp" value="" placeholder="Recipe">
                             <div class="form-spacer">
                                 <label class="terms">Terms and Conditions</label>
                             </div>
