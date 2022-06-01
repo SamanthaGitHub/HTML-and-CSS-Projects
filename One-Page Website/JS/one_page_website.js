@@ -38,3 +38,12 @@ function showSlides(n) {
     thumbs[slideIndex-1].className += " active";
     captionText.innerHTML = thumbs[slideIndex-1].alt;
 }
+
+//POP UP FORM
+function openForm() {
+    document.getElementById("popupform").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("popupform").style.display = "none";
+}

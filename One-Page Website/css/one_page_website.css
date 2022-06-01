@@ -1,5 +1,6 @@
 html {
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,14 +15,6 @@ body {
 body.fade-out {
     opacity: 0;
     transition: none;
-}
-
-.catcontact input[type="text"] {
-    width: 70%;
-    margin: 15px;
-    padding: 10px 5px;
-    border: 3px solid rgb(0,0,0);
-    border-radius: 50px;
 }
 
 .wrap {
@@ -65,37 +58,36 @@ body.fade-out {
     font-size: 22px;
 }
 
-.below {
-    z-index: 5;
-}
-
 h1 {
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vw;
+    font-size: 6vw;
     color: antiquewhite;
+    font-variant: small-caps;
 }
 
-h2 {
+h2, h4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    font-size: 40px;
 }
 
 .main-header p {
     text-align: center;
 }
 
-.myCats h3 {
+.myCats > h3 {
     color: antiquewhite;
     letter-spacing: 4px;
     font-size: 36px;
 }
 
-img {
+.catimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
 }
 
 .main-header img {
@@ -105,115 +97,131 @@ img {
     height: auto;
 }
 
-/* MODAL CSS START */
-.catRow > .catColumn {
-    padding: 0px 8px;
+
+/* POPUP CONTACT FORM */
+.border {
+    border: 1px solid red;
+    margin:100px 80px;
+    position: static;
 }
 
-.catRow:after {
-    content: "";
-    display: table;
-    clear: both;
+.submit {
+    color: white;
+    background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    animation: pulse 2s infinite;
 }
 
-.catColumn {
-    float: left;
-    width: 30%;
+@keyframes pulse {
+    0% {padding: 10px;}
+    50% {padding: 10px 15px; background-color: orangered}
+    100% {padding: 10px;}
 }
 
-.modal {
+.catcontact {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
+    bottom: 0;
+    right: 0px;
+    border: 2px solid black;
+    z-index: 10;
 }
 
-.modalContent {
-    position: relative;
-    background-color: #fefefe;
+.form-header {
+    color: black;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: antiquewhite;
+    color: black;
     margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
 }
 
-.close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
+.form-container input[type=text] {
+    width: 100%;
+    padding: 18px;
+    margin: 6px auto 20px ;
+    border: none;
+    background: antiquewhite;
 }
 
-.close:hover, .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
+.form-container input[type=text]:focus {
+    background-color: rgb(255, 248, 239);
+    outline: none;
+    box-shadow: inset rgba(0,0,0,0.1);
 }
 
-.myCatSlides {
-    display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numberText {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.captionContainer {
-    text-align: center;
+.form-container .btn {
     background-color: black;
-    padding: 2px 16px;
+    color: white;
+    padding: 18px 22px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
     color: white;
 }
 
-img.catThumb {
-    opacity: 0.6;
-}
-  
-.active, .demo:hover {
+.form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
-  
-img.hover-shadow {
-    transition: 0.3s;
+
+/* RESOURCE LINKS */
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-  
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+/* .resources-container > div {
+    width: 100%;
+} */
+
+.aristocatimg {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    border: 2px solid red;
 }
+
+.aristoflex {
+    flex: 40%;
+}
+
+.aristolist {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.aristolist li {
+    color: orangered;
+    padding: 5px;
+}
+
+/* VIDEO */
+.video-container {
+    width: 550px;
+    height: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    position: relative;
+ }
+
