@@ -10,9 +10,9 @@ The projects in this repository include:
 A site for eggcellent egg recipes (recipes themselves still need to be added). There are nine egg dishes to view, and a form to submit your own egg recipes. I tried to add as many puns as possible.
 
 
-## One Page Website
+## Fameows Cats
 A website about historically famous felines, including Felicette the 'astrocat' who was the first cat to go into space, Unsinkable Sam who survived several sinking ships, and Little Nicky who was the first cat ever cloned. This is a single page website.
 
 
-## Bootstrap4 Project
+## Mushroom Hunting
 My bootstrap project features a site dedicated to guiding mushroom hunters as to where to find morels, chanterelles, lion's mane and truffle mushrooms. There is also information about what time of year to go looking for each mushroom species.
